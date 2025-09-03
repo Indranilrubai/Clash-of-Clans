@@ -9,6 +9,7 @@ import time
 CLAN_TAG = "#P2Y8RL9C"
 API_KEY = st.secrets["API_KEY"]
 CLAN_TAG = st.secrets["CLAN_TAG"]
+BASE_URL = "https://api.clashofclans.com/v1/"
 # -------------
 
 def calculate_score(stars, destruction):
@@ -115,4 +116,5 @@ if st.button("Fetch CWL Data"):
 
         except Exception as e:
             st.error(f"Error fetching data: {e}")
+
 
